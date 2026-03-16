@@ -1,0 +1,181 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="45%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d9ff"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#00d9ff"/>
+    </linearGradient>
+    <linearGradient id="orb1" cx="30%" cy="40%" r="50%" fx="30%" fy="40%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#00d9ff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00d9ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="orb2" cx="70%" cy="40%" r="50%" fx="70%" fy="40%" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      @keyframes shimmer { 0%{opacity:.25} 50%{opacity:.75} 100%{opacity:.25} }
+      @keyframes float1 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-8px)} }
+      @keyframes float2 { 0%,100%{transform:translateY(0px)} 50%{transform:translateY(-5px)} }
+      @keyframes drift { 0%{stroke-dashoffset:0} 100%{stroke-dashoffset:-24} }
+      .cursor { animation: blink 1.1s step-end infinite; }
+      .s1 { animation: shimmer 2.2s ease-in-out infinite; }
+      .s2 { animation: shimmer 2.9s ease-in-out infinite 0.5s; }
+      .s3 { animation: shimmer 2.5s ease-in-out infinite 1.1s; }
+      .s4 { animation: shimmer 3.1s ease-in-out infinite 0.3s; }
+      .s5 { animation: shimmer 2.7s ease-in-out infinite 0.8s; }
+      .s6 { animation: shimmer 2.3s ease-in-out infinite 1.4s; }
+      .f1 { animation: float1 4.5s ease-in-out infinite; }
+      .f2 { animation: float2 5.5s ease-in-out infinite 1.2s; }
+      .f3 { animation: float1 5s ease-in-out infinite 0.7s; }
+      .ln { animation: drift 3s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)" rx="0"/>
+
+  <!-- Grid -->
+  <g opacity="0.035" stroke="#ffffff" stroke-width="0.8">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="100" y1="0" x2="100" y2="300"/>
+    <line x1="200" y1="0" x2="200" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="400" y1="0" x2="400" y2="300"/>
+    <line x1="500" y1="0" x2="500" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="700" y1="0" x2="700" y2="300"/>
+    <line x1="800" y1="0" x2="800" y2="300"/>
+    <line x1="900" y1="0" x2="900" y2="300"/>
+    <line x1="1000" y1="0" x2="1000" y2="300"/>
+    <line x1="1100" y1="0" x2="1100" y2="300"/>
+  </g>
+
+  <!-- Soft glow orbs -->
+  <ellipse cx="180" cy="150" rx="200" ry="160" fill="#00d9ff" opacity="0.045"/>
+  <ellipse cx="1020" cy="140" rx="220" ry="170" fill="#7c3aed" opacity="0.05"/>
+  <ellipse cx="600" cy="290" rx="280" ry="90" fill="#0ea5e9" opacity="0.025"/>
+
+  <!-- Animated scan line -->
+  <line class="ln" x1="0" y1="100" x2="1200" y2="100" stroke="#00d9ff" stroke-width="0.4" stroke-dasharray="6 6" opacity="0.12"/>
+
+  <!-- Floating code snippets -->
+  <g class="f1" opacity="0.15">
+    <text font-family="'Courier New', monospace" font-size="13" fill="#00d9ff" x="830" y="55">&lt;/&gt; const fullStack = true;</text>
+  </g>
+  <g class="f2" opacity="0.13">
+    <text font-family="'Courier New', monospace" font-size="12" fill="#a78bfa" x="870" y="255">npm run deploy 🚀</text>
+  </g>
+  <g class="f3" opacity="0.14">
+    <text font-family="'Courier New', monospace" font-size="11" fill="#34d399" x="840" y="278">git push origin main</text>
+  </g>
+
+  <!-- Stars / particles -->
+  <circle class="s1" cx="50" cy="38" r="2" fill="#00d9ff"/>
+  <circle class="s2" cx="90" cy="68" r="1.5" fill="#7c3aed"/>
+  <circle class="s3" cx="28" cy="85" r="2" fill="#00d9ff"/>
+  <circle class="s4" cx="1140" cy="45" r="2" fill="#a78bfa"/>
+  <circle class="s5" cx="1170" cy="80" r="1.5" fill="#00d9ff"/>
+  <circle class="s6" cx="1155" cy="255" r="2" fill="#7c3aed"/>
+  <circle class="s1" cx="760" cy="28" r="1.5" fill="#34d399"/>
+  <circle class="s3" cx="790" cy="268" r="1.8" fill="#00d9ff"/>
+  <circle class="s4" cx="72" cy="245" r="1.5" fill="#a78bfa"/>
+  <circle class="s2" cx="38" cy="200" r="1.2" fill="#34d399"/>
+  <circle class="s5" cx="1120" cy="180" r="1.2" fill="#34d399"/>
+  <circle class="s6" cx="820" cy="48" r="1.2" fill="#7c3aed"/>
+
+  <!-- Left vertical accent bar -->
+  <rect x="64" y="65" width="4" height="170" rx="2" fill="url(#accent)"/>
+
+  <!-- Comment line -->
+  <text font-family="'Courier New', monospace" font-size="14" fill="#00d9ff" x="82" y="86" opacity="0.65">// Hello, World! 👋</text>
+
+  <!-- MAIN NAME -->
+  <text
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="64"
+    font-weight="bold"
+    fill="#ffffff"
+    x="80"
+    y="165"
+    letter-spacing="2"
+  >Suraj Kumar Gupta</text>
+
+  <!-- Gradient underline -->
+  <rect x="80" y="174" width="600" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Subtitle -->
+  <text font-family="'Courier New', monospace" font-size="20" fill="#00d9ff" x="82" y="215">Full Stack Developer</text>
+  <text font-family="'Courier New', monospace" font-size="20" fill="#a78bfa" x="372" y="215">  &amp;  </text>
+  <text font-family="'Courier New', monospace" font-size="20" fill="#34d399" x="430" y="215">Problem Solver</text>
+
+  <!-- Blinking cursor after subtitle -->
+  <rect class="cursor" x="684" y="197" width="3" height="20" rx="1.5" fill="#00d9ff"/>
+
+  <!-- Tech pills row -->
+  <!-- Node.js -->
+  <rect x="82" y="238" width="90" height="26" rx="13" fill="#00d9ff" fill-opacity="0.12"/>
+  <rect x="82" y="238" width="90" height="26" rx="13" fill="none" stroke="#00d9ff" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#00d9ff" x="127" y="255" text-anchor="middle">Node.js</text>
+
+  <!-- Angular -->
+  <rect x="182" y="238" width="85" height="26" rx="13" fill="#f97316" fill-opacity="0.10"/>
+  <rect x="182" y="238" width="85" height="26" rx="13" fill="none" stroke="#f97316" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#f97316" x="224" y="255" text-anchor="middle">Angular</text>
+
+  <!-- MongoDB -->
+  <rect x="277" y="238" width="96" height="26" rx="13" fill="#34d399" fill-opacity="0.10"/>
+  <rect x="277" y="238" width="96" height="26" rx="13" fill="none" stroke="#34d399" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#34d399" x="325" y="255" text-anchor="middle">MongoDB</text>
+
+  <!-- Docker -->
+  <rect x="383" y="238" width="80" height="26" rx="13" fill="#38bdf8" fill-opacity="0.10"/>
+  <rect x="383" y="238" width="80" height="26" rx="13" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#38bdf8" x="423" y="255" text-anchor="middle">Docker</text>
+
+  <!-- AWS -->
+  <rect x="473" y="238" width="65" height="26" rx="13" fill="#fbbf24" fill-opacity="0.10"/>
+  <rect x="473" y="238" width="65" height="26" rx="13" fill="none" stroke="#fbbf24" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#fbbf24" x="505" y="255" text-anchor="middle">AWS</text>
+
+  <!-- Java -->
+  <rect x="548" y="238" width="65" height="26" rx="13" fill="#fb923c" fill-opacity="0.10"/>
+  <rect x="548" y="238" width="65" height="26" rx="13" fill="none" stroke="#fb923c" stroke-width="0.8" opacity="0.6"/>
+  <text font-family="'Courier New', monospace" font-size="12" fill="#fb923c" x="580" y="255" text-anchor="middle">Java</text>
+
+  <!-- Right side decorative bracket -->
+  <g opacity="0.22" stroke="#00d9ff" stroke-width="1.8" fill="none">
+    <path d="M1090 80 L1070 80 L1070 220 L1090 220"/>
+    <path d="M1100 92 L1120 92 L1120 208 L1100 208"/>
+  </g>
+
+  <!-- Right-side small icon cluster (terminal-style icon) -->
+  <g transform="translate(1140, 148)" opacity="0.38">
+    <!-- Terminal box -->
+    <rect x="-28" y="-28" width="56" height="44" rx="6" fill="none" stroke="#00d9ff" stroke-width="1.2"/>
+    <rect x="-28" y="-28" width="56" height="12" rx="6" fill="#00d9ff" opacity="0.15"/>
+    <!-- Window dots -->
+    <circle cx="-18" cy="-22" r="2.2" fill="#ff5f57"/>
+    <circle cx="-9" cy="-22" r="2.2" fill="#febc2e"/>
+    <circle cx="0" cy="-22" r="2.2" fill="#28c840"/>
+    <!-- Prompt lines -->
+    <text font-family="'Courier New', monospace" font-size="9" fill="#00d9ff" x="-22" y="-5">$ ./build.sh</text>
+    <text font-family="'Courier New', monospace" font-size="9" fill="#34d399" x="-22" y="7">✔ done</text>
+  </g>
+
+  <!-- Bottom accent bar -->
+  <rect x="0" y="295" width="1200" height="5" fill="url(#accent)"/>
+  <rect x="0" y="295" width="600" height="5" fill="url(#accent2)" opacity="0.5"/>
+</svg>
