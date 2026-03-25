@@ -79,16 +79,14 @@ I'm a **passionate Full Stack Developer** who loves crafting modern, performant 
 <div align="center">
 
 <a href="https://github.com/surajgupta007">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=surajgupta007&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=ffffff"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=surajgupta007&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&text_color=ffffff&cache_seconds=1800" />
   &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=surajgupta007&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=ffffff"/>
+  <img height="180em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=surajgupta007&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=ffffff&cache_seconds=1800" />
 </a>
 
 <br/><br/>
 
-<a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=surajgupta007&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakLabel=ffffff&sideLabels=ffffff&dates=888888" alt="GitHub Streak"/>
-</a>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=surajgupta007&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d9ff&ring=00d9ff&fire=ff6b6b&currStreakLabel=ffffff&sideLabels=ffffff&dates=888888" alt="GitHub Streak"/>
 
 </div>
 
@@ -150,12 +148,12 @@ I'm a **passionate Full Stack Developer** who loves crafting modern, performant 
 
 <br/>
 
-\`\`\`
+```
 ╔══════════════════════════════════════════════════╗
 ║  "First, solve the problem. Then, write the code." ║
 ║                          — John Johnson            ║
 ╚══════════════════════════════════════════════════╝
-\`\`\`
+```
 
 <br/>
 
